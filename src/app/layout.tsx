@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import { GlobalStyle } from '@/styles/globals'
 import { Josefin_Sans } from 'next/font/google'
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 
@@ -14,6 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GlobalStyle />
       <body className={josefinSans.className}>{children}</body>
     </html>
   )
