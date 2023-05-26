@@ -1,73 +1,67 @@
+'use client'
 import Image from 'next/image'
+import * as S from '../styles/home.styles'
 
 export default function Home() {
   return (
-    <div className='flex flex-col justify-center w-full'>
-      <section id='inicio' className="flex flex-col w-full h-[955px] items-center relative">
+    <S.Container>
+      <S.Section id='Inicio'>
+        <S.ContentWrapper>
+          <S.Header>
+            <img src="/JujaArtsLogo.svg" alt="logo da Juja Arts" />
+            <S.Menu />
+          </S.Header>
 
-        <div className='flex justify-between w-[1110px] py-3'>
-          <Image src={'/JujaArtsLogo.svg'} alt='' width={141} height={66} />
-          <ul className='flex flex-row text-xl text-primary gap-7 items-center'>
-            <li><a href='#Main'>Sobre</a></li>
-            <li>Como funciona?</li>
-            <li>Serviços</li>
-            <li>Contato</li>
-          </ul>
-        </div>
-
-        <div className='flex h-full justify-between items-center w-[1110px] relative'>
-          <div className='flex flex-col gap-28'>
-            <div>
-              <h1 className='text-5xl text-text'>Transforme sua</h1>
-              <h1 className='text-5xl text-primary'>História de Amor</h1>
-              <h1 className='text-5xl text-text'>Em uma</h1>
-              <h1 className='text-5xl text-primary'>Obra de Arte Digital</h1>
+          <S.Content>
+            <div id='title-div'>
+              <S.ContentTitle>Transforme sua</S.ContentTitle>
+              <S.ContentTitlePrimary>História de Amor</S.ContentTitlePrimary>
+              <S.ContentTitle>em uma</S.ContentTitle>
+              <S.ContentTitlePrimary>Obra de Arte Digital</S.ContentTitlePrimary>
+              <a href="#">Conheça meus Serviços</a>
             </div>
 
-            <a href="#serviços" className='w-fit bg-primary rounded-lg px-8 py-5 font-light text-3xl text-white'>
-              Conheça meus Serviços!
-            </a>
-          </div>
 
+            <img id="heroimage" src="/HeroImage.svg" alt="Imagem exemplo de arte digital" />
+          </S.Content>
 
-          <Image className='-right-16 top-1/2 -translate-y-1/2 absolute ' src='/HeroImage.svg' alt='' width={700} height={700} />
+          <S.GradientTop />
+          <S.GradientBottom />
+        </S.ContentWrapper>
+      </S.Section>
 
-        </div>
+      <S.SectionBgPrimary id='sobre-mim'>
+        <S.ContentWrapper>
+          <S.Content>
+            <h2>Sobre Mim</h2>
+            <S.Card>
+              <img id='jujaimage' src="/Juja.svg" alt="Imagem de Júlia" />
+              <div>
+                <h1>Júlia Borges</h1>
+                <p>17 anos</p>
+              </div>
+              <p>Como artista digital sou apaixonada por criar arte que inspire, desafie e encante meu público. <br />
+                Se procura uma arte digital única, vibrante e inspiradora, você acabou de encontrar a pessoa certa!</p>
+            </S.Card>
+          </S.Content>
 
-        <div id="radial-top"></div>
-        <div id="radial-bottom"></div>
-      </section>
+          <S.GradientTopLight />
+          <S.GradientBottomLight />
+        </S.ContentWrapper>
+      </S.SectionBgPrimary>
 
+      <S.Section id='como-funciona'>
+        <S.ContentWrapper>
+          <S.Content>
+            <h3>Como funciona?</h3>
 
-      <section id='Main' className="flex flex-col bg-light w-full h-[650px] items-center relative">
+          </S.Content>
 
-        <div id="radial-top"></div>
-        <div id="radial-bottom"></div>
-      </section>
+          <S.GradientTop />
+          <S.GradientBottom />
+        </S.ContentWrapper>
+      </S.Section>
 
-      <section id='Main' className="flex flex-col w-full h-[850px] items-center relative">
-
-        <div id="radial-top"></div>
-        <div id="radial-bottom"></div>
-      </section>
-
-      <section id='Main' className="flex flex-col bg-light w-full h-[650px] items-center relative">
-
-        <div id="radial-top"></div>
-        <div id="radial-bottom"></div>
-      </section>
-
-      <section id='Main' className="flex flex-col w-full h-[500px] items-center relative">
-
-        <div id="radial-top"></div>
-        <div id="radial-bottom"></div>
-      </section>
-
-      <section id='Main' className="flex flex-col bg-light w-full h-[100px] justify-center items-center relative">
-
-        <h1 className='text-2xl font-light'>Juja Arts | 2023</h1>
-      </section>
-
-    </div>
+    </S.Container>
   )
 }
