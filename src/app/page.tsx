@@ -6,6 +6,7 @@ import * as S from '../styles/home.styles'
 
 import { BsWhatsapp, BsFillGiftFill, BsPencilSquare, BsInstagram } from 'react-icons/bs'
 import { HowItWorks } from '@/components/HowItWorks'
+import { MyServices } from '@/components/MyServices'
 
 export default function Home() {
   return (
@@ -14,31 +15,7 @@ export default function Home() {
       <HeroSection />
       <AboutMe />
       <HowItWorks />
-
-
-      <S.SectionBgPrimary id='meus-serviços'>
-        <S.ContentWrapper>
-          <S.Content>
-            <div className='servicesTitleDescription'>
-              <h2>Meus Serviços</h2>
-              <p>Confira todos os meus serviços disponíveis</p>
-            </div>
-
-            <S.ServicesCard>
-              <h1>Arte Casal</h1>
-              <p>a partir de R$80,00</p>
-
-              <img src="/Casal.svg" alt="Imagem de casal ilustrada" />
-              <S.ServiceCardGradient />
-            </S.ServicesCard>
-
-            <a href="#">Fazer Orçamento Agora</a>
-          </S.Content>
-
-          <S.GradientTopLight />
-          <S.GradientBottomLight />
-        </S.ContentWrapper>
-      </S.SectionBgPrimary>
+      <MyServices />
 
       <S.Section id='dúvida'>
         <S.ContentWrapper>
