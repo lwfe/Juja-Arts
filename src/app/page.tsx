@@ -1,4 +1,5 @@
 'use client'
+import { HeroSection } from '@/components/HeroSection'
 import * as S from '../styles/home.styles'
 
 import { BsWhatsapp, BsFillGiftFill, BsPencilSquare, BsInstagram } from 'react-icons/bs'
@@ -6,30 +7,8 @@ import { BsWhatsapp, BsFillGiftFill, BsPencilSquare, BsInstagram } from 'react-i
 export default function Home() {
   return (
     <S.Container>
-      <S.Section id='Inicio'>
-        <S.ContentWrapper>
-          <S.Header>
-            <img src="/JujaArtsLogo.svg" alt="logo da Juja Arts" />
-            <S.Menu />
-          </S.Header>
 
-          <S.Content>
-            <div id='title-div'>
-              <S.ContentTitle>Transforme sua</S.ContentTitle>
-              <S.ContentTitlePrimary>História de Amor</S.ContentTitlePrimary>
-              <S.ContentTitle>em uma</S.ContentTitle>
-              <S.ContentTitlePrimary>Obra de Arte Digital</S.ContentTitlePrimary>
-              <a href="#">Conheça meus Serviços</a>
-            </div>
-
-
-            <img id="heroimage" src="/HeroImage.svg" alt="Imagem exemplo de arte digital" />
-          </S.Content>
-
-          <S.GradientTop />
-          <S.GradientBottom />
-        </S.ContentWrapper>
-      </S.Section>
+      <HeroSection />
 
       <S.SectionBgPrimary id='sobre-mim'>
         <S.ContentWrapper>
