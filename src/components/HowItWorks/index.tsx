@@ -25,7 +25,7 @@ export function HowItWorks() {
                             <h1>Processo de Produção</h1>
                         </div>
 
-                        <p>Nessa etapa o cliente envia a imagem e faz o pagamento</p>
+                        <p>Nesta etapa eu começo a fazer a arte (prazo de até 3 dias corridos)</p>
                     </S.Card>
 
                     <S.Card>
@@ -34,7 +34,7 @@ export function HowItWorks() {
                             <h1>Enterga da Arte Digital</h1>
                         </div>
 
-                        <p>Nessa etapa o cliente envia a imagem e faz o pagamento</p>
+                        <p>Nesta etapa a arte é enviada para o cliente no formato JPEG</p>
                     </S.Card>
                 </S.CardWrapper>
             </S.Content>

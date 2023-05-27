@@ -10,6 +10,7 @@ export const Container = styled.div`
     overflow: hidden;
     gap: 48px;
     background-color: #6E6BE8;
+    z-index: -11;
 `;
 
 export const Content = styled.div`
