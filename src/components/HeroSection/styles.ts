@@ -9,6 +9,8 @@ export const Container = styled.div`
     position: relative;
     overflow: hidden;
     gap: 48px;
+    background-color: white;
+    z-index: -11;
 `;
 
 export const Logo = styled.img`
@@ -88,7 +90,7 @@ export const GradientTop = styled.div`
     right: 0;
     background: radial-gradient(rgba(110, 107, 232, 0.5) 0%, rgba(110, 107, 232, 0.8) 100%);
     filter: blur(150px);
-    z-index: -9999;
+    z-index: -10;
 `;
 
 export const GradientBottom = styled.div`
@@ -99,5 +101,5 @@ export const GradientBottom = styled.div`
     left: 0;
     background: radial-gradient(rgba(110, 107, 232, 0.5) 0%, rgba(110, 107, 232, 0.8) 100%);
     filter: blur(150px);
-    z-index: -9999;
+    z-index: -10;
 `;

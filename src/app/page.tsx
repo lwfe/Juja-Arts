@@ -1,5 +1,7 @@
 'use client'
 import { HeroSection } from '@/components/HeroSection'
+import { AboutMe } from '@/components/AboutMe'
+
 import * as S from '../styles/home.styles'
 
 import { BsWhatsapp, BsFillGiftFill, BsPencilSquare, BsInstagram } from 'react-icons/bs'
@@ -10,28 +12,7 @@ export default function Home() {
 
       <HeroSection />
 
-      <S.SectionBgPrimary id='sobre-mim'>
-        <S.ContentWrapper>
-          <S.Content>
-            <h2>Sobre Mim</h2>
-            <S.Card>
-              <img id='jujaimage' src="/Juja.svg" alt="Imagem de Júlia" />
-              <div className='sobremimContent'>
-                <div className='sobremimText'>
-                  <h1>Júlia Borges</h1>
-                  <p>17 anos</p>
-                </div>
-                <p>Como artista digital sou apaixonada por criar arte que inspire, desafie e encante meu público. <br />
-                  Se procura uma arte digital única, vibrante e inspiradora, você acabou de encontrar a pessoa certa!</p>
-              </div>
-
-            </S.Card>
-          </S.Content>
-
-          <S.GradientTopLight />
-          <S.GradientBottomLight />
-        </S.ContentWrapper>
-      </S.SectionBgPrimary>
+      <AboutMe />
 
       <S.Section id='como-funciona'>
         <S.ContentWrapper>
