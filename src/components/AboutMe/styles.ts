@@ -10,7 +10,7 @@ export const Container = styled.div`
     overflow: hidden;
     gap: 48px;
     background-color: #6E6BE8;
-    z-index: -11;
+    z-index: 0;
 
     h1 {
         font-weight: 500;
@@ -30,6 +30,7 @@ export const Content = styled.div`
     width: 100%;
     max-width: 390px;
     gap: 12px;
+    z-index: 50;
 
     @media screen and (min-width: 1000px)  {
         flex-direction: row;

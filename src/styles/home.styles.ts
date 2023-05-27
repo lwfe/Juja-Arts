@@ -5,9 +5,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    #sobre-mim {
-        z-index: 1000;
-    }
+    z-index: -900;
 `;
 
 export const Section = styled.section`
