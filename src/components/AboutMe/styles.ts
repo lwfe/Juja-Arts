@@ -78,8 +78,6 @@ export const Card = styled.div`
             font-size: 24px;
         }
     }
-
-    
 `;
 
 export const JujaImage = styled.img`
@@ -95,9 +93,9 @@ export const GradientTop = styled.div`
     position: absolute;
     width: 260px;
     height: 260px;
-    top: -50px;
-    right: -50px;
-    background: radial-gradient(rgba(211, 186, 244, 0.47) 0%, rgba(225, 206, 251, 0.88) 100%);
+    top: 0px;
+    right: 0px;
+    background: radial-gradient(rgba(211, 186, 244, 0.7) 0%, rgba(225, 206, 251, 0.88) 100%);
     filter: blur(150px);
     z-index: -9999;
 `;
@@ -108,7 +106,7 @@ export const GradientBottom = styled.div`
     height: 260px;
     bottom: -50px;
     left: -50px;
-    background: radial-gradient(rgba(211, 186, 244, 0.47) 0%, rgba(225, 206, 251, 0.88) 100%);
+    background: radial-gradient(rgba(211, 186, 244, 0.7) 0%, rgba(225, 206, 251, 0.88) 100%);
     filter: blur(150px);
     z-index: -9999;
 `;

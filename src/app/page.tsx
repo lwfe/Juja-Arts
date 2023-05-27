@@ -5,52 +5,16 @@ import { AboutMe } from '@/components/AboutMe'
 import * as S from '../styles/home.styles'
 
 import { BsWhatsapp, BsFillGiftFill, BsPencilSquare, BsInstagram } from 'react-icons/bs'
+import { HowItWorks } from '@/components/HowItWorks'
 
 export default function Home() {
   return (
     <S.Container>
 
       <HeroSection />
-
       <AboutMe />
+      <HowItWorks />
 
-      <S.Section id='como-funciona'>
-        <S.ContentWrapper>
-          <S.Content>
-            <h3>Como funciona?</h3>
-
-            <img id="howitworks" src="/HowItWorks.svg" alt="Imagem de mulher ilustrando" />
-
-            <S.Card>
-              <div className='TitleWithIcon'>
-                <BsWhatsapp size={24} color='#6E6BE8' />
-                <h1>Contato via Whatsapp</h1>
-              </div>
-              <p>Nessa etapa o cliente envia a imagem e faz o pagamento</p>
-            </S.Card>
-
-            <S.Card>
-              <div className='TitleWithIcon'>
-                <BsPencilSquare size={24} color='#6E6BE8' />
-                <h1>Processo de Produção</h1>
-              </div>
-              <p>Nesta etapa eu começo a fazer a arte (prazo de até 3 dias corridos)</p>
-            </S.Card>
-
-            <S.Card>
-              <div className='TitleWithIcon'>
-                <BsFillGiftFill size={24} color='#6E6BE8' />
-                <h1>Entrega da Arte Digital</h1>
-              </div>
-              <p>Nesta etapa a arte é enviada para o cliente no formato JPEG</p>
-            </S.Card>
-
-          </S.Content>
-
-          <S.GradientTop />
-          <S.GradientBottom />
-        </S.ContentWrapper>
-      </S.Section>
 
       <S.SectionBgPrimary id='meus-serviços'>
         <S.ContentWrapper>
