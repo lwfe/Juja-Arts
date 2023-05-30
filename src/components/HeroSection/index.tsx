@@ -9,12 +9,14 @@ export function HeroSection() {
                 <div className='navBarHamburguer'>
                     <HiMenu size={32} color='#6E6BE8' />
                 </div>
-                <S.NavMenu className='navBarMenu'>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#o-que-esperar">O que esperar?</a></li>
-                    <li><a href="#meu-trabalho">Serviços</a></li>
-                    <li><a href="#mais-do-meu-trabalho">Fazer Orçamento</a></li>
-                </S.NavMenu>
+                <div className='navBarMenu'>
+                    <S.NavMenu>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#o-que-esperar">O que esperar?</a></li>
+                        <li><a href="#meu-trabalho">Serviços</a></li>
+                        <li><a href="#mais-do-meu-trabalho">Fazer Orçamento</a></li>
+                    </S.NavMenu>
+                </div>
             </S.HeaderWrapper>
             <S.Content>
                 <S.MainText>
