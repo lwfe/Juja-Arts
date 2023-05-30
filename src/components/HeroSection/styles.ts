@@ -4,13 +4,24 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px 0 32px 0 ;
-    width: 100%;
+    width: 100vw;
+    height: fit-content;
+    max-width: 100vw;
+    padding: 20px 16px 20px 16px ;
     position: relative;
     overflow: hidden;
     gap: 48px;
-    background-color: white;
-    z-index: -11;
+    background-color: #F9F9F9;
+`;
+
+export const HeaderWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    max-width: 416px;
 `;
 
 export const Logo = styled.img`
@@ -23,7 +34,7 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 390px;
+    max-width: 416px;
     gap: 48px;
 
     @media screen and (min-width: 1000px)  {
@@ -35,12 +46,14 @@ export const Content = styled.div`
 export const MainText = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 
     h1 {
-        font-size: 32px;
+        font-size: 40px;
         font-weight: 500;
         color: #171837;
+        text-align: center;
 
         @media screen and (min-width: 1000px)  {
             font-size: 42px;
@@ -48,9 +61,10 @@ export const MainText = styled.div`
     }
 
     h2 {
-        font-size: 32px;
+        font-size: 40px;
         font-weight: 500;
         color: #6E6BE8;
+        text-align: center;
 
         @media screen and (min-width: 1000px)  {
             font-size: 42px;
@@ -61,10 +75,10 @@ export const MainText = styled.div`
         margin-top: 32px;
         width: fit-content;
         color: white;
-        font-size: 20px;
-        font-weight: 300;
-        background-color: #6E6BE8;
-        padding: 12px;
+        font-size: 24px;
+        font-weight: 400;
+        background-color: #171837;
+        padding: 16px 20px;
         border-radius: 4px;
 
         @media screen and (min-width: 1000px)  {
@@ -74,32 +88,10 @@ export const MainText = styled.div`
 `;
 
 export const HeroImage = styled.img`
-    width: 390px;
+    width: 480px;
     height: auto;
 
     @media screen and (min-width: 1000px)  {
         width: 450px;
     }
-`;
-
-export const GradientTop = styled.div`
-    position: absolute;
-    width: 260px;
-    height: 260px;
-    top: 0;
-    right: 0;
-    background: radial-gradient(rgba(110, 107, 232, 0.5) 0%, rgba(110, 107, 232, 0.8) 100%);
-    filter: blur(150px);
-    z-index: -10;
-`;
-
-export const GradientBottom = styled.div`
-    position: absolute;
-    width: 260px;
-    height: 260px;
-    bottom: 0;
-    left: 0;
-    background: radial-gradient(rgba(110, 107, 232, 0.5) 0%, rgba(110, 107, 232, 0.8) 100%);
-    filter: blur(150px);
-    z-index: -10;
 `;

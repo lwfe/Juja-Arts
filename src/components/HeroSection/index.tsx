@@ -1,9 +1,13 @@
 import * as S from './styles'
+import { HiMenu } from 'react-icons/hi'
 
 export function HeroSection() {
     return (
         <S.Container id='inicio'>
-            <S.Logo src='/JujaArtsLogo.svg' alt='Logo da Juja Arts' />
+            <S.HeaderWrapper>
+                <S.Logo src='/JujaArtsLogo.svg' alt='Logo da Juja Arts' />
+                <HiMenu size={32} color='#6E6BE8' />
+            </S.HeaderWrapper>
             <S.Content>
                 <S.MainText>
                     <h1>Transforme sua</h1>
@@ -11,14 +15,11 @@ export function HeroSection() {
                     <h1>em uma</h1>
                     <h2>Obra de Arte Digital</h2>
 
-                    <a href="#meus-serviços">Conheça meus Serviços</a>
+                    <a href="#meu-trabalho">Conheça meu Trabalho</a>
                 </S.MainText>
 
                 <S.HeroImage src='/HeroImage.svg' alt='Hero Image' />
             </S.Content>
-
-            <S.GradientTop />
-            <S.GradientBottom />
         </S.Container>
     )
 }

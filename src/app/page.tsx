@@ -1,29 +1,29 @@
 'use client'
+import { ThemeProvider } from 'styled-components'
+import { Container, Footer } from '@/styles/globals'
+import { LightTheme } from '@/styles/themes'
+
 import { HeroSection } from '@/components/HeroSection'
-import { AboutMe } from '@/components/AboutMe'
-
-import * as S from '../styles/home.styles'
-
-import { BsWhatsapp, BsFillGiftFill, BsPencilSquare, BsInstagram } from 'react-icons/bs'
-import { HowItWorks } from '@/components/HowItWorks'
-import { MyServices } from '@/components/MyServices'
-import { ContactMe } from '@/components/ContactMe'
+import { WhatToExpect } from '@/components/WhatToExcpect'
+import { MyWork } from '@/components/MyWork'
+import { MoreOfMyWork } from '@/components/MoreOfMyWork'
 
 export default function Home() {
   return (
-    <S.Container>
+    <ThemeProvider theme={LightTheme}>
+      <Container>
 
-      <HeroSection />
-      <AboutMe />
-      <HowItWorks />
-      <MyServices />
-      <ContactMe />
+        <HeroSection />
+        <WhatToExpect />
+        <MyWork />
+        <MoreOfMyWork />
 
-      <S.Footer>
-        <h1>
-          Juja Arts | 2023
-        </h1>
-      </S.Footer>
-    </S.Container>
+        <Footer>
+          <h1>
+            © 2023 JujaArts. Todos os direitos reservados.
+          </h1>
+        </Footer>
+      </Container>
+    </ThemeProvider>
   )
 }
