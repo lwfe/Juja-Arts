@@ -6,11 +6,9 @@ import { RiCompasses2Line } from 'react-icons/ri'
 export function WhatToExpect() {
     return (
         <S.Container id='o-que-esperar'>
-            <h1>O que <span>esperar?</span></h1>
-
             <S.Content>
+                <h1>O que <span>esperar?</span></h1>
                 <S.CardsWrapper>
-
                     <S.Card>
                         <S.Header>
                             <BsTrophy size={32} color='#6E6BE8' />

@@ -7,11 +7,15 @@ export const Container = styled.div`
     width: 100vw;
     height: fit-content;
     max-width: 100vw;
-    padding: 20px 16px 20px 16px ;
+    padding: 20px 32px;
     position: relative;
     overflow: hidden;
     gap: 48px;
     background-color: #F9F9F9;
+
+    @media screen and (min-width: 700px){
+        padding: 20px 64px;
+    }
 `;
 
 export const HeaderWrapper = styled.div`
@@ -19,9 +23,20 @@ export const HeaderWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
     width: 100%;
-    max-width: 416px;
+    max-width: 1110px;
+`;
+
+export const NavMenu =styled.ul`
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 30px;
+
+    li {
+        font-size: 20px;
+        color: ${props => props.theme.colors.accent};
+    }
 `;
 
 export const Logo = styled.img`
@@ -32,14 +47,18 @@ export const Logo = styled.img`
 export const Content = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 416px;
     gap: 48px;
+    max-width: 1110px;
+
+    @media screen and (min-width: 768px)  {
+        flex-direction: row;
+    }
 
     @media screen and (min-width: 1000px)  {
         flex-direction: row;
-        max-width: 920px;
     }
 `;
 
@@ -47,7 +66,11 @@ export const MainText = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 500px;
+
+    @media screen and (min-width: 700px){
+        align-items: start;
+    }
 
     h1 {
         font-size: 40px;
@@ -55,8 +78,9 @@ export const MainText = styled.div`
         color: #171837;
         text-align: center;
 
-        @media screen and (min-width: 1000px)  {
-            font-size: 42px;
+        @media screen and (min-width: 700px)  {
+            font-size: 40px;
+            text-align: left;
         }
     }
 
@@ -66,13 +90,14 @@ export const MainText = styled.div`
         color: #6E6BE8;
         text-align: center;
 
-        @media screen and (min-width: 1000px)  {
-            font-size: 42px;
+        @media screen and (min-width: 700px)  {
+            font-size: 40px;
+            text-align: left;
         }
     }
 
     a {
-        margin-top: 32px;
+        margin-top: 24px;
         width: fit-content;
         color: white;
         font-size: 24px;
@@ -80,8 +105,9 @@ export const MainText = styled.div`
         background-color: #171837;
         padding: 16px 20px;
         border-radius: 4px;
+        text-align: center;
 
-        @media screen and (min-width: 1000px)  {
+        @media screen and (min-width: 700px)  {
             font-size: 28px;
         }
     }
@@ -92,6 +118,6 @@ export const HeroImage = styled.img`
     height: auto;
 
     @media screen and (min-width: 1000px)  {
-        width: 450px;
+        width: 580px;
     }
 `;

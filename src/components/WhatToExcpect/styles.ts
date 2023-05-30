@@ -5,13 +5,22 @@ export const Container = styled.div`
     align-items: center;
     flex-direction: column;
     width: 100vw;
+    max-width: 100vw;
     height: fit-content;
     padding: 60px 32px 60px 32px;
-    position: relative;
     overflow: hidden;
     gap: 48px;
 
     background-color: ${props => props.theme.colors.surface};
+`;
+
+export const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 64px;
+    max-width: 1110px;
 
     h1 {
         font-weight: 600;
@@ -28,26 +37,16 @@ export const Container = styled.div`
     }
 `;
 
-export const Content = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 416px;
-    gap: 12px;
-
-    @media screen and (min-width: 1000px)  {
-        flex-direction: row;
-        max-width: 920px;
-    }
-`;
-
 export const CardsWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     gap: 20px;
+
+    @media screen and (min-width: 1000px) {
+        flex-direction: row;
+    }
 `;
 
 export const Card = styled.div`

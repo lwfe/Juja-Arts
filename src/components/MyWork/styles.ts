@@ -29,12 +29,11 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 416px;
     gap: 32px;
+    max-width: 1110px;
 
     @media screen and (min-width: 1000px)  {
-        flex-direction: row-reverse;
-        max-width: 920px;
+        flex-direction: row;
     }
 `;
 
@@ -47,7 +46,11 @@ export const MainText = styled.div`
     h1 {
         font-size: 38px;
         font-weight: 500;
-        color: ${props => props.theme.colors.accent}
+        color: ${props => props.theme.colors.accent};
+
+        @media screen and (min-width: 1000px){
+            font-size: 50px;
+        }
     }
 
     span {

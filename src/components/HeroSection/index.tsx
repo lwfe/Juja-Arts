@@ -6,7 +6,15 @@ export function HeroSection() {
         <S.Container id='inicio'>
             <S.HeaderWrapper>
                 <S.Logo src='/JujaArtsLogo.svg' alt='Logo da Juja Arts' />
-                <HiMenu size={32} color='#6E6BE8' />
+                <div className='navBarHamburguer'>
+                    <HiMenu size={32} color='#6E6BE8' />
+                </div>
+                <S.NavMenu className='navBarMenu'>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#o-que-esperar">O que esperar?</a></li>
+                    <li><a href="#meu-trabalho">Serviços</a></li>
+                    <li><a href="#mais-do-meu-trabalho">Fazer Orçamento</a></li>
+                </S.NavMenu>
             </S.HeaderWrapper>
             <S.Content>
                 <S.MainText>
@@ -18,8 +26,10 @@ export function HeroSection() {
                     <a href="#meu-trabalho">Conheça meu Trabalho</a>
                 </S.MainText>
 
+
                 <S.HeroImage src='/HeroImage.svg' alt='Hero Image' />
+
             </S.Content>
-        </S.Container>
+        </S.Container >
     )
 }

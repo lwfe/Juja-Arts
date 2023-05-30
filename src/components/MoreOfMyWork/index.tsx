@@ -19,7 +19,7 @@ export function MoreOfMyWork() {
                         <p>Trabalhos feitos até o momento atual, sempre praticando para <b>entregar o melhor</b> para meus clientes!</p>
                     </S.TitleWrapper>
 
-                    <a href="https://contate.me/jujaarts">Quero Fazer um Orçamento</a>
+                    <a href="https://contate.me/jujaarts" target='_blank'>Quero Fazer um Orçamento</a>
                 </S.MainContent>
 
             </S.Content>

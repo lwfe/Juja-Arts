@@ -3,9 +3,9 @@ import { createGlobalStyle, styled } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0; 
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0; 
     }
 
     body {
@@ -21,6 +21,19 @@ export const GlobalStyle = createGlobalStyle`
     a {
         color:black;
         text-decoration: none;
+    }
+
+    .navBarHamburguer {
+        @media screen and (min-width: 1000px){
+            display: none;
+        }
+    }
+
+    .navBarMenu {
+        display: none;
+        @media screen and (min-width: 1000px) {
+            display: flex;
+        }
     }
 `;
 
@@ -39,11 +52,11 @@ export const Footer = styled.footer`
     width: 100%;
     background-color: ${props => props.theme.colors.background};
     padding: 32px 0;
-    max-width: 416px;
     
     h1 {
        font-size: 20px;
        font-weight: 300;
+       max-width: 1110px;
        color: ${props => props.theme.colors.accent};
     }
 `;

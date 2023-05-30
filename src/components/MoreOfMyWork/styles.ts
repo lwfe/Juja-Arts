@@ -19,13 +19,12 @@ export const Content = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 416px;
     gap: 48px;
     position: relative;
+    max-width: 1110px;
 
     @media screen and (min-width: 1000px)  {
         flex-direction: row;
-        max-width: 920px;
     }
 `;
 
@@ -55,6 +54,10 @@ export const MainContent = styled.div`
     align-items: center;
     gap: 64px;
 
+    @media screen and  (min-width: 1000px){
+        align-items: end;
+    }
+
     a {
         color: ${props => props.theme.colors.surface};
         width: fit-content;
@@ -77,10 +80,18 @@ export const TitleWrapper = styled.div`
     width: 100%;
     gap: 32px;
 
+    @media screen and (min-width: 1000px) {
+        align-items: end;
+    }
+
     h1 {
         font-size: 32px;
         font-weight: 500;
-        color: ${props => props.theme.colors.accent}
+        color: ${props => props.theme.colors.accent};
+
+        @media screen and  (min-width: 1000px){
+            font-size: 40px;
+        }
     }
 
     span {
@@ -90,7 +101,11 @@ export const TitleWrapper = styled.div`
     p {
         font-size: 24px;
         text-align: center;
-        color: ${props => props.theme.colors.contrast}
+        color: ${props => props.theme.colors.contrast};
+
+        @media screen and  (min-width: 1000px){
+            text-align: end;
+        }
     }
 
     b {
