@@ -60,6 +60,8 @@ export const Content = styled.div`
     @media screen and (min-width: 1000px)  {
         flex-direction: row;
     }
+
+    animation: show-left-to-right 3s;
 `;
 
 export const MainText = styled.div`
@@ -75,25 +77,18 @@ export const MainText = styled.div`
     h1 {
         font-size: 40px;
         font-weight: 500;
-        color: #171837;
+        color: ${props => props.theme.colors.accent};
         text-align: center;
 
         @media screen and (min-width: 700px)  {
             font-size: 40px;
             text-align: left;
         }
+
     }
 
-    h2 {
-        font-size: 40px;
-        font-weight: 500;
-        color: #6E6BE8;
-        text-align: center;
-
-        @media screen and (min-width: 700px)  {
-            font-size: 40px;
-            text-align: left;
-        }
+    span {
+        color: ${props => props.theme.colors.primary};
     }
 
     a {
@@ -102,7 +97,7 @@ export const MainText = styled.div`
         color: white;
         font-size: 24px;
         font-weight: 400;
-        background-color: #171837;
+        background-color: ${props => props.theme.colors.accent};
         padding: 16px 20px;
         border-radius: 4px;
         text-align: center;

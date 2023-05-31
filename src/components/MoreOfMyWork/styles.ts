@@ -39,12 +39,7 @@ export const ImageWrapper = styled.div`
 export const ImageTrack = styled.div`
     display: flex;
     gap: 24px;
-    animation: scroll 5s linear normal;
-
-    @keyframes scroll {
-        0% {transform: translate(0)}
-	    100% { transform: translateX(-100px)}
-    }
+    animation: slide 5s linear 1s infinite;
 `;
 
 export const MainContent = styled.div`

@@ -35,6 +35,27 @@ export const GlobalStyle = createGlobalStyle`
             display: flex;
         }
     }
+
+    @keyframes slide {
+        0%{
+            transform: translateX(550px)
+        }
+        100%{
+            transform: translateX(calc(-290px*4))
+        }
+    }
+
+    @keyframes show-left-to-right {
+        0% {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
 `;
 
 export const Container = styled.div`

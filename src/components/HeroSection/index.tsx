@@ -20,10 +20,12 @@ export function HeroSection() {
             </S.HeaderWrapper>
             <S.Content>
                 <S.MainText>
-                    <h1>Transforme sua</h1>
-                    <h2>História de Amor</h2>
-                    <h1>em uma</h1>
-                    <h2>Obra de Arte Digital</h2>
+                    <h1>
+                        Transforme sua <br />
+                        <span>História de Amor</span> <br />
+                        em uma <br />
+                        <span>Obra de Arte Digital</span> <br />
+                    </h1>
 
                     <a href="#meu-trabalho">Conheça meu Trabalho</a>
                 </S.MainText>
