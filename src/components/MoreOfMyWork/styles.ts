@@ -39,7 +39,6 @@ export const ImageWrapper = styled.div`
 export const ImageTrack = styled.div`
     display: flex;
     gap: 24px;
-    animation: slide 5s linear 1s infinite;
 `;
 
 export const MainContent = styled.div`

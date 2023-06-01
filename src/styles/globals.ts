@@ -36,15 +36,6 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
-    @keyframes slide {
-        0%{
-            transform: translateX(550px)
-        }
-        100%{
-            transform: translateX(calc(-290px*4))
-        }
-    }
-
     @keyframes show-left-to-right {
         0% {
             opacity: 0;
